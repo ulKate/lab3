@@ -1,0 +1,29 @@
+<h1>Listing messeges</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Topic</th>
+    <th>Body</th>
+    <th>State</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @messeges.each do |messege| %>
+  <tr>
+    <td><%= messege.name %></td>
+    <td><%= messege.topic %></td>
+    <td><%= messege.body %></td>
+    <td><%= messege.state %></td>
+    <td><%= link_to 'Show', messege %></td>
+    <td><%= link_to 'Edit', edit_messege_path(messege) %></td>
+    <td><%= link_to 'Destroy', messege, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Messege', new_messege_path %>

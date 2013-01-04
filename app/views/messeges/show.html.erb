@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @messege.name %>
+</p>
+
+<p>
+  <b>Topic:</b>
+  <%= @messege.topic %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @messege.body %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @messege.state %>
+</p>
+
+
+<%= link_to 'Edit', edit_messege_path(@messege) %> |
+<%= link_to 'Back', messeges_path %>
