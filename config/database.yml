@@ -43,8 +43,8 @@ test:
   encoding: unicode
   database: messege_test
   pool: 5
-  username: kate
-  password: 1234
+  username: postgres
+  password: postgres
 
 production:
   adapter: postgresql
