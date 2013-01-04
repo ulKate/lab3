@@ -4,10 +4,5 @@ one:
   name: MyString
   topic: MyString
   body: MyText
-  state: MyString
+  state: unpublished
 
-two:
-  name: MyString
-  topic: MyString
-  body: MyText
-  state: MyString

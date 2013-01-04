@@ -1,5 +1,7 @@
 Lab3::Application.routes.draw do
-  resources :messeges
+  resources :messeges do
+    put :change_state
+  end
 
 
   # The priority is based upon order of creation:

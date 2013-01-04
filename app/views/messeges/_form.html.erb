@@ -23,10 +23,11 @@
     <%= f.label :body %><br />
     <%= f.text_area :body %>
   </div>
-  <div class="field">
-    <%= f.label :state %><br />
-    <%= f.text_field :state %>
-  </div>
+	<% unless @messege.new_record? %>
+	    <%= link_to 'publish', messege_change_state_path(@messege, state: :publish), method: :put %> |
+	    <%= link_to 'unpublish', messege_change_state_path(@messege, state: :unpublish), method: :put %> |
+	    <%= link_to 'delete', messege_change_state_path(@messege, state: :delete), method: :put %>
+	  <% end %>
   <div class="actions">
     <%= f.submit %>
   </div>

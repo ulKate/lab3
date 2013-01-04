@@ -68,6 +68,15 @@ class MessegesController < ApplicationController
       end
     end
   end
+  
+  def change_state
+      @messege = Messege.find(params[:messege_id])
+      if @messege
+        @messege.fire_state_event(params[:state])
+        @messege.save
+      end
+      redirect_to messeges_path
+  end
 
   # DELETE /messeges/1
   # DELETE /messeges/1.json
