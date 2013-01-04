@@ -38,6 +38,11 @@ class MessegesControllerTest < ActionController::TestCase
     put :update, id: @messege, messege: { body: @messege.body, name: @messege.name, state: @messege.state, topic: @messege.topic }
     assert_redirected_to messege_path(assigns(:messege))
   end
+  
+  test "should put change_state" do
+     put :change_state, messege_id: @messege.id, state: "delete"
+     assert_redirected_to messeges_path
+  end
 
   test "should destroy messege" do
     assert_difference('Messege.count', -1) do
