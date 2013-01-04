@@ -1,0 +1,5 @@
+Host	ec2-54-243-238-144.compute-1.amazonaws.com
+Database	dakcgrlvt5kgv1
+User	zjzqwdmdrzdvai
+Port	5432
+Password	Hide RYevpJ4Gy-BhB5qJyJS74sWVZY

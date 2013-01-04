@@ -49,7 +49,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: lab3_production
+  database: dakcgrlvt5kgv1
   pool: 5
-  username: lab3
-  password:
+  username: zjzqwdmdrzdvai
+  password: RYevpJ4Gy-BhB5qJyJS74sWVZY
