@@ -15,10 +15,10 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: messege
+  database: rails_lab_development
   pool: 5
-  username: kate
-  password: 1234
+  username: rails_lab
+  password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -41,15 +41,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: messege_test
+  database: rails_lab_test
   pool: 5
-  username: postgres
-  password: postgres
+  username: rails_lab
+  password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: dakcgrlvt5kgv1
+  database: rails_lab_production
   pool: 5
-  username: zjzqwdmdrzdvai
-  password: RYevpJ4Gy-BhB5qJyJS74sWVZY
+  username: rails_lab
+  password:

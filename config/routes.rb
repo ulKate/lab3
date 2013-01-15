@@ -1,9 +1,4 @@
-Lab3::Application.routes.draw do
-  resources :messeges do
-    put :change_state
-  end
-
-
+RailsLab::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

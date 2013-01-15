@@ -6,8 +6,7 @@ gem 'rails', '3.2.9'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'state_machine'
-gem 'simplecov', :require => false, :group => :test
+
 
 # Gems used only for assets and not required
 # in production environments by default.
